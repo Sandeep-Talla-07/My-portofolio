@@ -5,46 +5,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>My portofilo</title>
 </head>
 
 <body>
 
     <div class="container">
-        <aside style="background-color: aqua;">
-            <h2>This is sidebar</h2>
+        <aside class="sidebar">
+
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="Images/my-avatar.png" alt="my avatar">
+                </figure>
+
+                <div class="info-title">
+                    <h1 class="name">Sandeep Talla</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+
+                <!-- <button>
+                    <span>Show contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button> -->
+            </div>
+            <!-- Contact details -->
+
+            <div class="contact-details">
+                <div class="separator"></div>
+
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-info-title">EMAIL</p>
+                            <a href="mailto:sandeeptalla3333@gmail.com" class="">sandeeptalla3333@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-info-title">PHONE</p>
+                            <a href="tel:+919381763068" class="">+(91) 9381763068</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-info-title">BIRTHDAY</p>
+                            <time datetime="2004-05-31">May 31, 2004</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-info-title">LOCATION</p>
+                            <address>Madhapur, Hyderabad, India</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-icons">
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="Images/linkedin.png" alt="linkedin icon">
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="Images/leetcode.png" alt="leetcode icon">
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="Images/geeksforgeeks.png" alt="geeksforgeeks icon">
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="#" class="social-link">
+                            <img src="Images/github.png" alt="github icon">
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </aside>
 
-        <div>
-            <header>
 
-                <nav>
-                    <h2>This is navbar</h2>
+        <!-- Main section -->
+
+        <div class="main-container">
+
+            <section>
+                <nav class="navbar">
+                    <small>Portofilo</small>
+                    <ul class="navbar-items">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experince">Experince</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
+            </section>
+            <header class="header">
 
-                <section>
-                    <h2>This about section</h2>
+                <section class="hero-section">
+                    <h2>Hi, I'm <span class="highlight">Sandeep</span></h2>
+                    <p>Java Full Stack Developer & AI/ML Enthusiast</p>
+                    <p>I build responsive web applications and intelligent machine learning solutions that solve
+                        real-world problems. Passionate about creating clean, scalable, and user-friendly software.
+                    </p>
+                    <div class="btn-sections">
+                        <button class="btn"><a href="">Download resume</a></button>
+                        <button class="btn"><a href="">Contact</a></button>
+                    </div>
                 </section>
 
             </header>
 
-            <main>
-                <div class="about">
-                    <h2>About me</h2>
-                    <p>I'm Sandeep, a Computer Science graduate with a strong interest in Java Full Stack Development
-                        and Artificial Intelligence.
+            <main class="main">
+                <!-- <section>
+                    <h2>This about section</h2>
+                </section> -->
 
-                        I enjoy building responsive web applications, solving Data Structures and Algorithms problems,
-                        and developing machine learning models. My goal is to become a Software Development Engineer
-                        where I can contribute to building scalable and efficient software solutions.
+                <section id="about">
+                    <h2 class="title">About me</h2>
+                    <div class="title-border"></div>
+                    <div class="about-text">
+                        <p>I'm Sandeep, a Computer Science graduate with a strong interest in Java Full Stack
+                            Development
+                            and Artificial Intelligence.</p>
 
-                        I'm currently improving my skills in Java, Spring Boot, React, SQL, and Data Structures while
-                        continuously working on real-world projects.</p>
-                </div>
+                        <p>I enjoy building responsive web applications, solving Data Structures and Algorithms
+                            problems,
+                            and developing machine learning models. My goal is to become a Software Development Engineer
+                            where I can contribute to building scalable and efficient software solutions.</p>
 
-                <div>
-                    <h2>skills</h2>
-                    <p>Programming Languages
+                        <p>I'm currently improving my skills in Java, Spring Boot, React, SQL, and Data Structures while
+                            continuously working on real-world projects.</p>
+                    </div>
+                </section>
+
+                <section id="skills">
+                    <h2 class="title">Skills</h2>
+                    <div class="skills-border"></div>
+                    <div class="skil-titles">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-name">Python</span>
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-name">BootStrap</span>
+                        <span class="skill-name">Tailwind CSS</span>
+                        <span class="skill-name">React.js</span>
+                        <span class="skill-name">Rest APIs</span>
+                        <span class="skill-name">SDLC</span>
+                        <span class="skill-name">Git</span>
+                        <span class="skill-name">GitHub</span>
+
+                        <span class="skill-name">Pandas</span>
+                        <span class="skill-name">SpringBoot</span>
+                        <span class="skill-name">TensorFlow</span>
+
+                        <span class="skill-name">NumPy</span>
+                        <span class="skill-name">Scikit-learn</span>
+                        <span class="skill-name">VS Code</span>
+
+                        <span class="skill-name">Database Management System</span>
+                        <span class="skill-name">Operating
+                            System</span>
+                        <span class="skill-name">Data Structures and Algorithms</span>
+                        <span class="skill-name">Object-Oriented
+                            Programming</span>
+                        <span class="skill-name">SOLID
+                            Principles</span>
+                        <span class="skill-name">Analytical Thinking</span>
+                        <span class="skill-name">Communication Skills</span>
+                        <span class="skill-name">Proactive Attitude</span>
+                        <span class="skill-name">Team Collaboration</span>
+                    </div>
+                    <!-- <p>Programming Languages
                         Java
                         Python
                         C
@@ -72,70 +237,28 @@
                         GitHub
                         VS Code
                         IntelliJ IDEA
-                        Eclipse</p>
-                </div>
+                        Eclipse</p> -->
+                </section>
 
-                <div>
+                <section id="projects">
+                    <h2 class="title">Projects</h2>
+                    <div class="project-title-border"></div>
+
+                    <!-- vertical cards using flex -->
                     <div>
-                        <h2>projects</h2>
-                        <p>Non-Invasive Blood Group Prediction
-
-                            Technologies
-
-                            Python
-                            TensorFlow
-                            Flask
-                            OpenCV
-                            HTML
-                            CSS
-                            JavaScript
-
-                            Description
-
-                            Developed a CNN-based web application that predicts blood groups from fingerprint images.
-                            The
-                            system preprocesses fingerprints, checks image quality, and predicts the blood group using a
-                            trained deep learning model.
-
-                            Features
-
-                            Fingerprint upload
-                            Image quality detection
-                            Blood group prediction
-                            Responsive UI
-
-                            GitHub
-
-                            https://github.com/yourusername/project
-
-                            Live Demo
-
-                            Coming Soon</p>
+                        <h1>project-1</h1>
                     </div>
-                </div>
 
-                <div>
                     <div>
-                        JavaScript Form Validation
-
-                        Technologies
-
-                        HTML
-                        CSS
-                        JavaScript
-
-                        Features
-
-                        Email validation
-                        Password strength checker
-                        Show/Hide password
-                        Confirm password validation
-                        Responsive design
+                        <h1>projet-2</h1>
                     </div>
-                </div>
 
-                <div>
-                    <h2>education</h2>
+
+                </section>
+
+
+                <section id="education">
+                    <h2 class="title">Education</h2>
                     <div>
                         Bachelor of Technology (Computer Science)
 
@@ -144,44 +267,44 @@
                         College:
                         University:
                     </div>
-                </div>
+                </section>
 
-                <div>
-                    <h2>experince</h2>
+                <section id="experince">
+                    <h2 class="title">experince</h2>
                     <p>Bachelor of Technology (Computer Science)
 
                         Graduation Year:
                         CGPA:
                         College:
                         University:</p>
-                </div>
+                </section>
 
-                <div>
-                    <h2>certifications</h2>
+                <section id="certifications">
+                    <h2 class="title">certifications</h2>
                     <p>Bachelor of Technology (Computer Science)
 
                         Graduation Year:
                         CGPA:
                         College:
                         University:</p>
-                </div>
+                </section>
 
-                <div>
-                    <h2>resume</h2>
+                <section id="resume">
+                    <h2 class="title">resume</h2>
                     <p>download</p>
-                </div>
+                </section>
 
-                <div>
-                    <h2>contact</h2>
+                <section id="contact">
+                    <h2 class="title">contact</h2>
                     <p>form validation</p>
-                </div>
+                </section>
             </main>
 
             <footer>
-                <div>
+                <section id="copy-rights">
                     <p>c 2026 Sandeep</p>
                     <p>desigend and develoed by sandeep</p>
-                </div>
+                </section>
             </footer>
 
         </div>

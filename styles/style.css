@@ -1,3 +1,8 @@
+:root {
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +11,7 @@
 
 body {
   background-color: hsl(0, 0%, 7%);
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -69,9 +75,18 @@ body {
   gap: 8px;
 }
 
+/* --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7); */
+
+/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
+  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
+
+/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
+  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
+
 .info-title .name {
   color: hsl(0, 0%, 98%);
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 500;
   letter-spacing: 0.6px;
   margin-bottom: 10px;
@@ -87,8 +102,8 @@ body {
 .info-title .info-name-title {
   color: hsl(0, 0%, 100%);
   background: hsl(240, 1%, 17%);
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   padding: 6px 12px;
   border-radius: 8px;
   width: max-content;
@@ -181,50 +196,52 @@ body {
 }
 
 .contact-info-title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  font-weight: 500;
-  /* color: ; */
+  /* margin-bottom: -2px; */
+  font-size: 14px;
+  font-weight: 600;
+  color: hsla(0, 0%, 84%, 0.7);
 }
 
 .contact-info a,
 time,
 address {
-  font-size: 17px;
-  font-weight: 400;
-  color: yellow;
+  font-size: 12px;
+  font-weight: 100;
+  color: hsl(0, 0%, 84%);
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  cursor: pointer;
+  border-radius: 12px;
+  background: hsl(240, 1%, 17%);
+  padding: 6px 8px;
   margin-top: 20px;
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
 
 .social-item {
-  /* background-color: gray; */
   border-radius: 12px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px 4px;
-  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  /* box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25); */
 }
 
 .social-link img {
-  width: 40px;
+  width: 38px;
 }
 
 /* ----------- main ----------- */
 
 .main-container {
-  /* padding: 0 18px; */
+  padding: 0 12px;
   border-radius: 20px;
   border: 1px solid hsl(0, 0%, 22%);
-  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   background: hsl(240, 2%, 12%);
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
 }
 
 a {
@@ -234,6 +251,8 @@ a {
 ul {
   list-style: none;
 }
+
+/* ------------ Navbar Section------------ */
 
 .navbar {
   width: 100%;
@@ -249,41 +268,39 @@ ul {
   );
   border: 1px solid hsl(0, 0%, 22%);
   padding: 0 16px;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  /* border-top-left-radius: 20px;
-  border-top-right-radius: 20px; */
   z-index: 5;
 }
 
+/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
+  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
+
 .navbar small {
   font-size: 32px;
-  font-weight: 700;
-  color: yellow;
+  /* font-size: 26px; */
+  font-weight: 900;
+  color: hsl(45, 100%, 72%);
+  /* color: hsl(45, 54%, 58%); */
 }
 
 .navbar-items {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   transition: width 0.3s ease;
 }
 
 .navbar-items a {
-  color: white;
+  color: hsl(0, 0%, 100%);
   position: relative;
   transition: width 0.3s ease;
-  /* border-bottom: 4px solid transparent; */
 }
 
 .navbar-items a:hover {
   color: yellow;
 }
-
-/* .navbar-items a.active {
-  color: green;
-} */
 
 .navbar-items a::after {
   content: "";

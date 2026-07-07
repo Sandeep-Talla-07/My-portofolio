@@ -51,7 +51,7 @@ achievementItem.addEventListener("click", () => {
   });
 });
 
-leadershipItem.addEventListener("click", () => {
+certificatesItem.addEventListener("click", () => {
   document.getElementById("achievements").scrollIntoView({
     behavior: "smooth",
   });

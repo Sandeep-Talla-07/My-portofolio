@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -12,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
     <title>My portofilo</title>
 </head>
 
@@ -125,29 +132,42 @@
                 <nav class="navbar">
                     <small>Portofilo</small>
                     <ul class="navbar-items">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experince">Experince</a></li>
 
-                        <li><a href="#leadership-experince">Leadership</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact-details">Contact</a></li>
+                        <li id="about-item" class="item">About me</li>
+                        <li id="skills-item" class="item">Skills</li>
+                        <li id="projects-item" class="item">Projects</li>
+                        <li class="item" id="education-item">Education</li>
+                        <li id="experince-item" class="item">Experience</li>
+                        <li id="achievement-item" class="item">Achievements</li>
+                        <li id="certificates-item" class="item">Certifications</li>
+                        <li id="contact-item" class="item">Contact</li>
+
+                        <!-- <li><a href="#about">About me</a></li> -->
+                        <!-- <li><a href="#skills">Skills</a></li> -->
+                        <!-- <li><a href="#projects">Projects</a></li> -->
+                        <!-- <li><a href="#education">Education</a></li> -->
+                        <!-- <li><a href="#experince">Experince</a></li> -->
+                        <!-- <li><a href="#leadership-experince">Leadership</a></li> -->
+                        <!-- <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact-details">Contact</a></li> -->
                     </ul>
                 </nav>
             </section>
             <header class="header">
 
                 <section class="hero-section">
-                    <h2>Hi, I'm <span class="highlight">Sandeep</span></h2>
-                    <p>Java Full Stack Developer & AI/ML Enthusiast</p>
+                    <h1>Hi, I'm <span class="highlight">Sandeep</span></h1>
+                    <h2>Java Full Stack Developer & AI/ML Enthusiast</h2>
                     <p>I build responsive web applications and intelligent machine learning solutions that solve
                         real-world problems. Passionate about creating clean, scalable, and user-friendly software.
                     </p>
                     <div class="btn-sections">
-                        <button class="btn"><a href="">Download resume</a></button>
-                        <button class="btn"><a href="">Contact</a></button>
+                        <button id="downloadResume" class="btn"><img src="Images/download.png"
+                                alt="download icon">Download
+                            resume</button>
+                        <button id="contact-btn" class="btn"><img src="Images/contact.png"
+                                alt="contact icon">Contact</button>
+
                     </div>
                 </section>
 
@@ -162,7 +182,23 @@
                     <h2 class="title">About me</h2>
                     <div class="title-border"></div>
                     <div class="about-text">
-                        <p>I'm Sandeep, a Computer Science graduate with a strong interest in Java Full Stack
+
+                        <p>I'm Sandeep, a Computer Science graduate with a strong interest in Software Development, Java
+                            Full
+                            Stack Development, and Artificial Intelligence. I enjoy designing responsive web
+                            applications, solving challenging Data Structures and Algorithms problems, and building
+                            intelligent solutions using modern technologies.</p>
+
+                        <p>I have solved 400+ LeetCode problems, which have strengthened my problem-solving skills and
+                            deepened my understanding of algorithms, data structures, and software design. Alongside
+                            this, I have developed full-stack web applications and machine learning projects, gaining
+                            hands-on experience with Java, Python, JavaScript, TensorFlow, Flask, and MySQL.</p>
+
+                        <p>I'm currently expanding my expertise in Java, Spring Boot, React, SQL, and System Design
+                            while working on real-world projects. My goal is to begin my career as a Software Developer
+                            where I can contribute to building scalable, efficient, and user-focused software solutions
+                            while continuously learning and growing.</p>
+                        <!-- <p>I'm Sandeep, a Computer Science graduate with a strong interest in Java Full Stack
                             Development
                             and Artificial Intelligence.</p>
 
@@ -172,13 +208,14 @@
                             where I can contribute to building scalable and efficient software solutions.</p>
 
                         <p>I'm currently improving my skills in Java, Spring Boot, React, SQL, and Data Structures while
-                            continuously working on real-world projects.</p>
+                            continuously working on real-world projects.</p> -->
                     </div>
                 </section>
 
                 <section id="skills">
                     <h2 class="title">Skills</h2>
-                    <div class="skills-border"></div>
+                    <!-- <div class="skills-border"></div> -->
+                    <div class="title-border"></div>
                     <div class="skil-titles">
                         <span class="skill-name">Java</span>
                         <span class="skill-name">Python</span>
@@ -202,54 +239,29 @@
                         <span class="skill-name">NumPy</span>
                         <span class="skill-name">Scikit-learn</span>
                         <span class="skill-name">VS Code</span>
-
-                        <span class="skill-name">Database Management System</span>
-                        <span class="skill-name">Operating
-                            System</span>
-                        <span class="skill-name">Data Structures and Algorithms</span>
-                        <span class="skill-name">Object-Oriented
-                            Programming</span>
                         <span class="skill-name">SOLID
                             Principles</span>
                         <span class="skill-name">Analytical Thinking</span>
+                        <span class="skill-name">Database Management System</span>
+                        <span class="skill-name">Operating
+                            System</span>
+                        <span class="skill-name">Team Collaboration</span>
+                        <span class="skill-name">Data Structures and Algorithms</span>
+                        <span class="skill-name">Object-Oriented
+                            Programming</span>
+
                         <span class="skill-name">Communication Skills</span>
                         <span class="skill-name">Proactive Attitude</span>
-                        <span class="skill-name">Team Collaboration</span>
+
                     </div>
-                    <!-- <p>Programming Languages
-                        Java
-                        Python
-                        C
-                        JavaScript
-                        Frontend
-                        HTML5
-                        CSS3
-                        JavaScript
-                        Bootstrap
-                        React (once you learn it)
-                        Backend
-                        Java
-                        Spring Boot (once you learn it)
-                        Flask
-                        Database
-                        MySQL
-                        Machine Learning
-                        TensorFlow
-                        OpenCV
-                        Scikit-learn
-                        Pandas
-                        NumPy
-                        Tools
-                        Git
-                        GitHub
-                        VS Code
-                        IntelliJ IDEA
-                        Eclipse</p> -->
                 </section>
+
+
+                <!-- ----------- Project Section ------------ -->
 
                 <section id="projects">
                     <h2 class="title">Projects</h2>
-                    <div class="project-title-border"></div>
+                    <div class="title-border"></div>
 
                     <!-- vertical cards using flex -->
                     <div class="project-container">
@@ -270,7 +282,7 @@
                                 <li>Image quality validation</li>
                                 <li>Blood compatibility checker</li>
                                 <li>Nutrition recommendations</li>
-                                <!-- <li>Responsive Flask-based web interface</li> -->
+                                <li>Responsive Flask-based web interface</li>
                             </ul>
 
                             <div class="project-technologies">
@@ -307,7 +319,77 @@
                                 <li>Image quality validation</li>
                                 <li>Blood compatibility checker</li>
                                 <li>Nutrition recommendations</li>
-                                <!-- <li>Responsive Flask-based web interface</li> -->
+                                <li>Responsive Flask-based web interface</li>
+                            </ul>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project Four -->
+                        <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div>
+
+                            <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
+                            </ul>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project Three -->
+                        <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div>
+
+                            <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
                             </ul>
 
                             <div class="project-technologies">
@@ -328,9 +410,209 @@
                     </div>
 
 
-
-
                 </section>
+
+                <!-- <section id="projects">
+
+                    <h2 class="title">Projects</h2>
+                    <div class="title-border"></div>
+
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+
+                            Project 1 -->
+
+                <!-- <div class="swiper-slide">
+
+                                <div class="project-box">
+
+                                    <h3 class="project-header">
+                                        Non-Invasive Blood Group Prediction
+                                    </h3>
+
+                                    <p class="project-info">
+                                        Developed a CNN-based web application that predicts blood
+                                        groups from fingerprint images using a LeNet architecture.
+                                        The application performs image validation and provides blood
+                                        compatibility and nutrition recommendations.
+                                    </p>
+
+                                    <ul class="project-features">
+
+                                        <li>Fingerprint Upload</li>
+                                        <li>Blood Group Prediction</li>
+                                        <li>Image Validation</li>
+                                        <li>Compatibility Checker</li>
+                                        <li>Nutrition Suggestions</li>
+
+                                    </ul>
+
+                                    <div class="project-technologies">
+
+                                        <span>Python</span>
+                                        <span>TensorFlow</span>
+                                        <span>OpenCV</span>
+                                        <span>Flask</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+
+                                    </div>
+
+                                    <div class="project-links">
+
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Demo</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div> -->
+
+                <!-- Project 2 -->
+
+                <!-- <div class="swiper-slide">
+
+                                <div class="project-box">
+
+                                    <h3 class="project-header">
+                                        Loan Approval Prediction
+                                    </h3>
+
+                                    <p class="project-info">
+                                        Machine learning project that predicts loan approval based on
+                                        applicant information using Random Forest and Logistic
+                                        Regression models.
+                                    </p>
+
+                                    <ul class="project-features">
+
+                                        <li>Data Cleaning</li>
+                                        <li>EDA</li>
+                                        <li>Model Training</li>
+                                        <li>Prediction System</li>
+
+                                    </ul>
+
+                                    <div class="project-technologies">
+
+                                        <span>Python</span>
+                                        <span>Pandas</span>
+                                        <span>Scikit-Learn</span>
+                                        <span>Flask</span>
+
+                                    </div>
+
+                                    <div class="project-links">
+
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Demo</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div> -->
+
+                <!-- Project 3 -->
+
+                <!-- <div class="swiper-slide">
+
+                                <div class="project-box">
+
+                                    <h3 class="project-header">
+                                        Portfolio Website
+                                    </h3>
+
+                                    <p class="project-info">
+                                        Responsive personal portfolio developed using HTML, CSS and
+                                        JavaScript with EmailJS contact integration.
+                                    </p>
+
+                                    <ul class="project-features">
+
+                                        <li>Responsive Design</li>
+                                        <li>EmailJS Contact Form</li>
+                                        <li>Animations</li>
+                                        <li>Dark Theme</li>
+
+                                    </ul>
+
+                                    <div class="project-technologies">
+
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                        <span>EmailJS</span>
+
+                                    </div>
+
+                                    <div class="project-links">
+
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Live</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div> -->
+
+                <!-- Project 4 -->
+
+                <!-- <div class="swiper-slide">
+
+                                <div class="project-box">
+
+                                    <h3 class="project-header">
+                                        Car Price Prediction
+                                    </h3>
+
+                                    <p class="project-info">
+                                        Machine learning model that predicts used car prices based on
+                                        company, model, fuel type and year.
+                                    </p>
+
+                                    <ul class="project-features">
+
+                                        <li>Regression Model</li>
+                                        <li>Data Cleaning</li>
+                                        <li>Prediction System</li>
+
+                                    </ul>
+
+                                    <div class="project-technologies">
+
+                                        <span>Python</span>
+                                        <span>Flask</span>
+                                        <span>Scikit-Learn</span>
+
+                                    </div>
+
+                                    <div class="project-links">
+
+                                        <a href="#">GitHub</a>
+                                        <a href="#">Demo</a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-next"></div>
+
+                        <div class="swiper-button-prev"></div>
+
+                    </div>
+
+                </section> -->
 
 
                 <section id="education">
@@ -338,7 +620,7 @@
                     <div class="education-title-border"></div>
 
                     <!-- education container -->
-                    <div class="education-container">
+                    <div class="education-container" id="education">
                         <!-- education e.tech -->
                         <div class="education-card ">
                             <h3>Bachelor of Technology</h3>
@@ -553,7 +835,7 @@
                         <!-- Contact form -->
                         <div class="form-container">
                             <h2 id="contact-details">Contact form</h2>
-                            <form action="" id="myForm">
+                            <form action="#" id="myForm">
                                 <div class="name-field">
                                     <!-- <label for="name">Full name</label> -->
                                     <div class="input-group">
@@ -601,11 +883,19 @@
         </div>
 
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
+    <!-- <script src="script/swiperfunction.js"></script> -->
+    <!-- <script src="script/scrollSection.js"></script> -->
+    <script src="script/resumeDownload.js"></script>
+    <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="script/script.js"></script>
+    <!-- <script src="script/swiperfunction.js"></script>
+    <script src="script/scrollSection.js"></script>
+    <script src="script/resumeDownload.js"></script>
+    <script src="script/script.js"></script> -->
 </body>
 
 </html>

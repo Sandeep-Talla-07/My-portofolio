@@ -19,11 +19,15 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet"> -->
 
+    <!-- ------------ Link for swiper card ------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- ---------------------------------------------- -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
@@ -275,193 +279,33 @@
                     <h2 class="title">Projects</h2>
                     <div class="title-border"></div>
 
-                    <!-- vertical cards using flex -->
-                    <div class="project-container">
+                    <div class="project-container swiper">
+                        <div class="card-wrapper">
+                            <div class="card-list swiper-wrapper">
 
-                        <!-- project one -->
-                        <div class="project-box">
-                            <div class="project-description">
-                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
-                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
-                                    from fingerprint images using a LeNet architecture. The application performs image
-                                    quality validation and provides transfusion compatibility and nutrition
-                                    recommendations.</p>
-                            </div>
-
-                            <ul class="project-features">
-                                <li>Fingerprint image upload</li>
-                                <li>CNN-based blood group prediction</li>
-                                <li>Image quality validation</li>
-                                <li>Blood compatibility checker</li>
-                                <li>Nutrition recommendations</li>
-                                <li>Responsive Flask-based web interface</li>
-                            </ul>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>OpenCV</span>
-                                <span>Flask</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="" class="project-link-github">GitHub</a>
-                                <a href="" class="project-link-demo">Demo</a>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Project two -->
-                        <div class="project-box">
-                            <div class="project-description">
-                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
-                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
-                                    from fingerprint images using a LeNet architecture. The application performs image
-                                    quality validation and provides transfusion compatibility and nutrition
-                                    recommendations.</p>
-                            </div>
-
-                            <ul class="project-features">
-                                <li>Fingerprint image upload</li>
-                                <li>CNN-based blood group prediction</li>
-                                <li>Image quality validation</li>
-                                <li>Blood compatibility checker</li>
-                                <li>Nutrition recommendations</li>
-                                <li>Responsive Flask-based web interface</li>
-                            </ul>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>OpenCV</span>
-                                <span>Flask</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="" class="project-link-github">GitHub</a>
-                                <a href="" class="project-link-demo">Demo</a>
-                            </div>
-                        </div>
-
-                        <!-- Project Four -->
-                        <div class="project-box">
-                            <div class="project-description">
-                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
-                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
-                                    from fingerprint images using a LeNet architecture. The application performs image
-                                    quality validation and provides transfusion compatibility and nutrition
-                                    recommendations.</p>
-                            </div>
-
-                            <ul class="project-features">
-                                <li>Fingerprint image upload</li>
-                                <li>CNN-based blood group prediction</li>
-                                <li>Image quality validation</li>
-                                <li>Blood compatibility checker</li>
-                                <li>Nutrition recommendations</li>
-                                <li>Responsive Flask-based web interface</li>
-                            </ul>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>OpenCV</span>
-                                <span>Flask</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="" class="project-link-github">GitHub</a>
-                                <a href="" class="project-link-demo">Demo</a>
-                            </div>
-                        </div>
-
-                        <!-- Project Three -->
-                        <div class="project-box">
-                            <div class="project-description">
-                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
-                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
-                                    from fingerprint images using a LeNet architecture. The application performs image
-                                    quality validation and provides transfusion compatibility and nutrition
-                                    recommendations.</p>
-                            </div>
-
-                            <ul class="project-features">
-                                <li>Fingerprint image upload</li>
-                                <li>CNN-based blood group prediction</li>
-                                <li>Image quality validation</li>
-                                <li>Blood compatibility checker</li>
-                                <li>Nutrition recommendations</li>
-                                <li>Responsive Flask-based web interface</li>
-                            </ul>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>OpenCV</span>
-                                <span>Flask</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="" class="project-link-github">GitHub</a>
-                                <a href="" class="project-link-demo">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </section>
-
-                <!-- <section id="projects">
-
-                    <h2 class="title">Projects</h2>
-                    <div class="title-border"></div>
-
-                    <div class="swiper mySwiper">
-
-                        <div class="swiper-wrapper">
-
-                            Project 1 -->
-
-                <!-- <div class="swiper-slide">
-
-                                <div class="project-box">
-
-                                    <h3 class="project-header">
-                                        Non-Invasive Blood Group Prediction
-                                    </h3>
-
-                                    <p class="project-info">
-                                        Developed a CNN-based web application that predicts blood
-                                        groups from fingerprint images using a LeNet architecture.
-                                        The application performs image validation and provides blood
-                                        compatibility and nutrition recommendations.
-                                    </p>
+                                <!-- Project - 1 -->
+                                <div class="card-item swiper-slide">
+                                    <div class="project-description">
+                                        <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                        <p class="project-info">Developed a CNN-based web application that predicts
+                                            blood groups
+                                            from fingerprint images using a LeNet architecture. The application
+                                            performs image
+                                            quality validation and provides transfusion compatibility and nutrition
+                                            recommendations.</p>
+                                    </div>
 
                                     <ul class="project-features">
-
-                                        <li>Fingerprint Upload</li>
-                                        <li>Blood Group Prediction</li>
-                                        <li>Image Validation</li>
-                                        <li>Compatibility Checker</li>
-                                        <li>Nutrition Suggestions</li>
-
+                                        <li>Fingerprint image upload
+                                        </li>
+                                        <li>CNN-based blood group prediction</li>
+                                        <li>Image quality validation</li>
+                                        <li>Blood compatibility checker</li>
+                                        <li>Nutrition recommendations</li>
+                                        <li>Responsive Flask-based web interface</li>
                                     </ul>
 
                                     <div class="project-technologies">
-
                                         <span>Python</span>
                                         <span>TensorFlow</span>
                                         <span>OpenCV</span>
@@ -469,162 +313,356 @@
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
-
                                     </div>
 
                                     <div class="project-links">
+                                        <button class="project-btn github-btn"
+                                            data-url="https://github.com/Sandeep-Talla-07/Anticipating-Blood-Group-Using-Finger-Print"><ion-icon
+                                                name="logo-github"></ion-icon>GitHub</button>
 
-                                        <a href="#">GitHub</a>
-                                        <a href="#">Demo</a>
-
+                                        <button class=" project-btn demo-btn"><ion-icon
+                                                name="globe-outline"></ion-icon>Demo</button>
                                     </div>
 
                                 </div>
 
-                            </div> -->
-
-                <!-- Project 2 -->
-
-                <!-- <div class="swiper-slide">
-
-                                <div class="project-box">
-
-                                    <h3 class="project-header">
-                                        Loan Approval Prediction
-                                    </h3>
-
-                                    <p class="project-info">
-                                        Machine learning project that predicts loan approval based on
-                                        applicant information using Random Forest and Logistic
-                                        Regression models.
-                                    </p>
+                                <!-- Project - 2 -->
+                                <div class="card-item swiper-slide">
+                                    <div class="project-description">
+                                        <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                        <p class="project-info">Developed a CNN-based web application that predicts
+                                            blood groups
+                                            from fingerprint images using a LeNet architecture. The application
+                                            performs image
+                                            quality validation and provides transfusion compatibility and nutrition
+                                            recommendations.</p>
+                                    </div>
 
                                     <ul class="project-features">
-
-                                        <li>Data Cleaning</li>
-                                        <li>EDA</li>
-                                        <li>Model Training</li>
-                                        <li>Prediction System</li>
-
+                                        <li>Fingerprint image upload
+                                        </li>
+                                        <li>CNN-based blood group prediction</li>
+                                        <li>Image quality validation</li>
+                                        <li>Blood compatibility checker</li>
+                                        <li>Nutrition recommendations</li>
+                                        <li>Responsive Flask-based web interface</li>
                                     </ul>
 
                                     <div class="project-technologies">
-
                                         <span>Python</span>
-                                        <span>Pandas</span>
-                                        <span>Scikit-Learn</span>
+                                        <span>TensorFlow</span>
+                                        <span>OpenCV</span>
                                         <span>Flask</span>
-
-                                    </div>
-
-                                    <div class="project-links">
-
-                                        <a href="#">GitHub</a>
-                                        <a href="#">Demo</a>
-
-                                    </div>
-
-                                </div>
-
-                            </div> -->
-
-                <!-- Project 3 -->
-
-                <!-- <div class="swiper-slide">
-
-                                <div class="project-box">
-
-                                    <h3 class="project-header">
-                                        Portfolio Website
-                                    </h3>
-
-                                    <p class="project-info">
-                                        Responsive personal portfolio developed using HTML, CSS and
-                                        JavaScript with EmailJS contact integration.
-                                    </p>
-
-                                    <ul class="project-features">
-
-                                        <li>Responsive Design</li>
-                                        <li>EmailJS Contact Form</li>
-                                        <li>Animations</li>
-                                        <li>Dark Theme</li>
-
-                                    </ul>
-
-                                    <div class="project-technologies">
-
                                         <span>HTML</span>
                                         <span>CSS</span>
                                         <span>JavaScript</span>
-                                        <span>EmailJS</span>
-
                                     </div>
 
                                     <div class="project-links">
+                                        <button class="project-btn github-btn"
+                                            data-url="https://github.com/Sandeep-Talla-07/Anticipating-Blood-Group-Using-Finger-Print"><ion-icon
+                                                name="logo-github"></ion-icon>GitHub</button>
 
-                                        <a href="#">GitHub</a>
-                                        <a href="#">Live</a>
-
+                                        <button class=" project-btn demo-btn"><ion-icon
+                                                name="globe-outline"></ion-icon>Demo</button>
                                     </div>
 
                                 </div>
 
-                            </div> -->
-
-                <!-- Project 4 -->
-
-                <!-- <div class="swiper-slide">
-
-                                <div class="project-box">
-
-                                    <h3 class="project-header">
-                                        Car Price Prediction
-                                    </h3>
-
-                                    <p class="project-info">
-                                        Machine learning model that predicts used car prices based on
-                                        company, model, fuel type and year.
-                                    </p>
+                                <!-- Project - 3 -->
+                                <div class="card-item swiper-slide">
+                                    <div class="project-description">
+                                        <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                        <p class="project-info">Developed a CNN-based web application that predicts
+                                            blood groups
+                                            from fingerprint images using a LeNet architecture. The application
+                                            performs image
+                                            quality validation and provides transfusion compatibility and nutrition
+                                            recommendations.</p>
+                                    </div>
 
                                     <ul class="project-features">
-
-                                        <li>Regression Model</li>
-                                        <li>Data Cleaning</li>
-                                        <li>Prediction System</li>
-
+                                        <li>Fingerprint image upload
+                                        </li>
+                                        <li>CNN-based blood group prediction</li>
+                                        <li>Image quality validation</li>
+                                        <li>Blood compatibility checker</li>
+                                        <li>Nutrition recommendations</li>
+                                        <li>Responsive Flask-based web interface</li>
                                     </ul>
 
                                     <div class="project-technologies">
-
                                         <span>Python</span>
+                                        <span>TensorFlow</span>
+                                        <span>OpenCV</span>
                                         <span>Flask</span>
-                                        <span>Scikit-Learn</span>
-
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
                                     </div>
 
                                     <div class="project-links">
+                                        <button class="project-btn github-btn"
+                                            data-url="https://github.com/Sandeep-Talla-07/Anticipating-Blood-Group-Using-Finger-Print"><ion-icon
+                                                name="logo-github"></ion-icon>GitHub</button>
 
-                                        <a href="#">GitHub</a>
-                                        <a href="#">Demo</a>
-
+                                        <button class=" project-btn demo-btn"><ion-icon
+                                                name="globe-outline"></ion-icon>Demo</button>
                                     </div>
 
                                 </div>
 
+
+                                <!-- Project - 4 -->
+                                <div class="card-item swiper-slide">
+                                    <div class="project-description">
+                                        <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                        <p class="project-info">Developed a CNN-based web application that predicts
+                                            blood groups
+                                            from fingerprint images using a LeNet architecture. The application
+                                            performs image
+                                            quality validation and provides transfusion compatibility and nutrition
+                                            recommendations.</p>
+                                    </div>
+
+                                    <ul class="project-features">
+                                        <li>Fingerprint image upload
+                                        </li>
+                                        <li>CNN-based blood group prediction</li>
+                                        <li>Image quality validation</li>
+                                        <li>Blood compatibility checker</li>
+                                        <li>Nutrition recommendations</li>
+                                        <li>Responsive Flask-based web interface</li>
+                                    </ul>
+
+                                    <div class="project-technologies">
+                                        <span>Python</span>
+                                        <span>TensorFlow</span>
+                                        <span>OpenCV</span>
+                                        <span>Flask</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <div class="project-links">
+                                        <button class="project-btn github-btn"
+                                            data-url="https://github.com/Sandeep-Talla-07/Anticipating-Blood-Group-Using-Finger-Print"><ion-icon
+                                                name="logo-github"></ion-icon>GitHub</button>
+
+                                        <button class=" project-btn demo-btn"><ion-icon
+                                                name="globe-outline"></ion-icon>Demo</button>
+                                    </div>
+
+                                </div>
+
+                                <!-- Project - 5 -->
+                                <div class="card-item swiper-slide">
+                                    <div class="project-description">
+                                        <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                        <p class="project-info">Developed a CNN-based web application that predicts
+                                            blood groups
+                                            from fingerprint images using a LeNet architecture. The application
+                                            performs image
+                                            quality validation and provides transfusion compatibility and nutrition
+                                            recommendations.</p>
+                                    </div>
+
+                                    <ul class="project-features">
+                                        <li>Fingerprint image upload
+                                        </li>
+                                        <li>CNN-based blood group prediction</li>
+                                        <li>Image quality validation</li>
+                                        <li>Blood compatibility checker</li>
+                                        <li>Nutrition recommendations</li>
+                                        <li>Responsive Flask-based web interface</li>
+                                    </ul>
+
+                                    <div class="project-technologies">
+                                        <span>Python</span>
+                                        <span>TensorFlow</span>
+                                        <span>OpenCV</span>
+                                        <span>Flask</span>
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <div class="project-links">
+                                        <button class="project-btn github-btn"
+                                            data-url="https://github.com/Sandeep-Talla-07/Anticipating-Blood-Group-Using-Finger-Print"><ion-icon
+                                                name="logo-github"></ion-icon>GitHub</button>
+
+                                        <button class=" project-btn demo-btn"><ion-icon
+                                                name="globe-outline"></ion-icon>Demo</button>
+                                    </div>
+
+                                </div>
                             </div>
 
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+
                         </div>
-
-                        <div class="swiper-pagination"></div>
-
-                        <div class="swiper-button-next"></div>
-
-                        <div class="swiper-button-prev"></div>
-
                     </div>
+                </section>
 
+
+                <!-- <section id="projects">
+                    <h2 class="title">Projects</h2>
+                    <div class="title-border"></div> -->
+
+                <!-- vertical cards using flex -->
+                <!-- <div class="project-container"> -->
+
+                <!-- project one -->
+                <!-- <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div> -->
+
+                <!-- <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
+                            </ul> -->
+
+                <!-- <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div> -->
+
+
+
+                <!-- Project two -->
+                <!-- <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div>
+
+                            <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
+                            </ul>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div> -->
+
+                <!-- Project Four -->
+                <!-- <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div>
+
+                            <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
+                            </ul>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div> -->
+
+                <!-- Project Three -->
+                <!-- <div class="project-box">
+                            <div class="project-description">
+                                <h3 class="project-header">Non-Invasive Blood Group Prediction</h3>
+                                <p class="project-info">Developed a CNN-based web application that predicts blood groups
+                                    from fingerprint images using a LeNet architecture. The application performs image
+                                    quality validation and provides transfusion compatibility and nutrition
+                                    recommendations.</p>
+                            </div>
+
+                            <ul class="project-features">
+                                <li>Fingerprint image upload</li>
+                                <li>CNN-based blood group prediction</li>
+                                <li>Image quality validation</li>
+                                <li>Blood compatibility checker</li>
+                                <li>Nutrition recommendations</li>
+                                <li>Responsive Flask-based web interface</li>
+                            </ul>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="" class="project-link-github">GitHub</a>
+                                <a href="" class="project-link-demo">Demo</a>
+                            </div>
+                        </div>
+                    </div>
                 </section> -->
+
+
+
+                <!-- ----------- Education Section ------------- -->
 
 
                 <section id="education">
@@ -895,19 +933,23 @@
         </div>
 
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
-    <!-- <script src="script/swiperfunction.js"></script> -->
+
+    <!-- ------------ Link for swiper script link ------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- ----------------------------------------------------- -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- ----------- Scroll functionality script link ----------- -->
+
+    <script src="script/projectSlide.js"></script>
+
+    <script src="script/buttonScript.js"></script>
     <script src="script/scrollSction.js"></script>
     <script src="script/resumeDownload.js"></script>
     <script src="script/script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 
-    <!-- <script src="script/swiperfunction.js"></script>
-    <script src="script/scrollSection.js"></script>
-    <script src="script/resumeDownload.js"></script>
-    <script src="script/script.js"></script> -->
 </body>
 
 </html>

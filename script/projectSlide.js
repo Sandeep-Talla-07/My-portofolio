@@ -1,36 +1,46 @@
-new Swiper(".card-wrapper", {
+const projectSwiper = new Swiper(".card-wrapper", {
   loop: true,
-
   spaceBetween: 30,
-  //   centeredSlides: true,
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  // And if we need scrollbar
-  //   scrollbar: {
-  //     el: ".swiper-scrollbar",
-  //   },
-
-  // responsive breakpoints
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
-    // 768: {
-    //   slidesPerView: 2,
-    // },
-    // 1024: {
-    //   slidesPerView: 3,
-    // },
+  },
+  on: {
+    init: function () {
+      equalizeCardHeights();
+    },
   },
 });
+
+function equalizeCardHeights() {
+  const cards = document.querySelectorAll(".card-item");
+  let maxHeight = 0;
+
+  // reset first so we measure natural height
+  cards.forEach((card) => {
+    card.style.height = "auto";
+  });
+
+  cards.forEach((card) => {
+    if (card.offsetHeight > maxHeight) {
+      maxHeight = card.offsetHeight;
+    }
+  });
+
+  cards.forEach((card) => {
+    card.style.height = `${maxHeight}px`;
+  });
+}
+
+// re-run on window resize since text may reflow at different widths
+window.addEventListener("resize", equalizeCardHeights);

@@ -52,7 +52,7 @@ achievementItem.addEventListener("click", () => {
 });
 
 certificatesItem.addEventListener("click", () => {
-  document.getElementById("achievements").scrollIntoView({
+  document.getElementById("certifications").scrollIntoView({
     behavior: "smooth",
   });
 });

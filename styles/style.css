@@ -556,10 +556,14 @@ ul {
   width: 100%;
   margin: 80px 120px;
   overflow: hidden;
-  min-height: max-content;
+  /* min-height: fit-content; */
   border-radius: 15px;
   display: block;
   box-shadow: 0 8px 32px rgb(11, 12, 2);
+}
+
+.card-list.swiper-wrapper {
+  align-items: stretch; /* usually default, but let's be explicit */
 }
 
 .card-item {
@@ -574,10 +578,18 @@ ul {
   backdrop-filter: blur(20px);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(20px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-item:active {
   cursor: grabbing;
+}
+
+.project-description {
+  flex: 0 0 auto;
+  min-height: 140px;
 }
 
 .card-item .project-header {
@@ -593,12 +605,24 @@ ul {
   font-weight: 400;
   margin-bottom: 25px;
   text-align: justify;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-item ul {
   list-style: none;
   padding-left: 28px;
   margin-bottom: 25px;
+}
+
+.project-features {
+  flex: 1 0 auto;
+  /* flex: 0 0 auto; stop growing to fill space — we want a FIXED size now */
+  min-height: 190px;
 }
 
 .project-features li {
@@ -636,6 +660,7 @@ ul {
   border: 1px solid hsl(0, 0%, 22%);
   background: hsl(240, 1%, 17%);
   box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  margin-top: auto; /* pushes tech tags + buttons to the bottom */
 }
 
 .project-technologies span {
@@ -649,7 +674,8 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-bottom: 0;
 }
 
 /* --light-gray: hsl(0, 0%, 84%);

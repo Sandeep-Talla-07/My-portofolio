@@ -43,7 +43,6 @@ form.addEventListener("submit", function (e) {
     .send("service_68dsn2d", "template_uxayo6t", {
       name: name.value,
       email: email.value,
-      //   subject: subject.value,
       message: message.value,
     })
     .then(() => {

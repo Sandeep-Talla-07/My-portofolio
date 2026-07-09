@@ -26,7 +26,6 @@ function equalizeCardHeights() {
   const cards = document.querySelectorAll(".card-item");
   let maxHeight = 0;
 
-  // reset first so we measure natural height
   cards.forEach((card) => {
     card.style.height = "auto";
   });
@@ -42,5 +41,4 @@ function equalizeCardHeights() {
   });
 }
 
-// re-run on window resize since text may reflow at different widths
 window.addEventListener("resize", equalizeCardHeights);

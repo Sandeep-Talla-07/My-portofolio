@@ -75,15 +75,6 @@ body {
   gap: 8px;
 }
 
-/* --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7); */
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
-
 .info-title .name {
   color: hsl(0, 0%, 98%);
   font-size: 26px;
@@ -91,13 +82,6 @@ body {
   letter-spacing: 0.6px;
   margin-bottom: 10px;
 }
-
-/* .info-name-title {
-  color: hsl(0, 0%, 100%); */
-/* background-color: hsl(240, 1%, 17%); */
-/* background-attachment: fixed; */
-/* font-size: 40px; */
-/* } */
 
 .info-title .info-name-title {
   color: hsl(0, 0%, 100%);
@@ -108,28 +92,6 @@ body {
   border-radius: 8px;
   width: max-content;
 }
-
-/* .avatar-box {
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  );
-}
-
-.avatar-box img {
-  width: 160px;
-} */
-
-/* .contact-details {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s ease-in-out;
-} */
 
 .separator {
   width: 100%;
@@ -172,15 +134,6 @@ body {
   z-index: 1;
 }
 
-/* .icon-box::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  /* background: var(--eerie-black-1); */
-/* border-radius: inherit;
-  z-index: -1; */
-/* }  */
-
 .contact-info {
   max-width: calc(100%-46px);
   width: calc(100%-46px);
@@ -196,7 +149,6 @@ body {
 }
 
 .contact-info-title {
-  /* margin-bottom: -2px; */
   font-size: 14px;
   font-weight: 600;
   color: hsla(0, 0%, 84%, 0.7);
@@ -227,7 +179,6 @@ address {
   justify-content: center;
   align-items: center;
   padding: 4px 4px;
-  /* box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25); */
 }
 
 .social-link img {
@@ -273,15 +224,10 @@ ul {
   z-index: 5;
 }
 
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
-
 .navbar small {
   font-size: 32px;
-  /* font-size: 26px; */
   font-weight: 900;
-  color: hsl(45, 100%, 72%); /* ----------> Primary */
-  /* color: hsl(45, 54%, 58%); --------> secondary */
+  color: hsl(45, 100%, 72%);
 }
 
 .navbar-items {
@@ -319,11 +265,6 @@ ul {
   width: 100%;
 }
 
-/* .navbar-items a:hover {
-  padding-bottom: 10px;
-  border-color: red;
-} */
-
 .header,
 .main {
   padding: 0 20px;
@@ -338,22 +279,10 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* gap: 12px; */
 }
 
-/* --light-gray: hsl(0, 0%, 84%);
---light-gray-70: hsla(0, 0%, 84%, 0.7); */
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
-
 .hero-section h1 {
-  /* color: hsl(0, 0%, 100%); */
   color: hsl(0, 0%, 98%);
-  /* font-size: 64px; */
   font-size: 44px;
   font-weight: 800;
   line-height: 1.2;
@@ -364,13 +293,11 @@ ul {
 .hero-section .highlight {
   font-size: 72px;
   font-weight: 800;
-  /* font-family: "Playfair Display", serif; */
   color: hsl(45, 100%, 72%);
 }
 .hero-section h2 {
   font-size: 30px;
   font-weight: 400;
-  /* color: hsl(45, 54%, 58%); */
   color: hsla(0, 0%, 84%, 0.7);
   margin-bottom: 40px;
 }
@@ -380,7 +307,6 @@ ul {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  /* max-width: 1000px; */
   margin-bottom: 40px;
 }
 
@@ -389,23 +315,17 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 28px;
-  /* background-color: rebeccapurple; */
 }
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
 
 .hero-section .btn-sections .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: -60px; */
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
   font-weight: 400;
   font-size: 18px;
-  /* background: hsl(45, 100%, 72%); */
   background: hsl(45, 54%, 58%);
   transition: all 0.3s ease;
 }
@@ -419,28 +339,18 @@ ul {
   color: hsl(0, 0%, 98%);
   background: hsl(45, 100%, 72%);
   transform: translateY(-2px);
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
   box-shadow: 4px 6px 10px 10px hsl(0, 0%, 19%) 97%;
 }
 
 .btn-sections img {
   width: 20px;
-  /* color: red; */
 }
 
 /* ----------- about section ------------ */
-
 #about {
   margin-bottom: 80px;
   padding: 12px 0;
-  /* background-color: rgb(92, 131, 131); */
 }
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
 
 .title {
   font-size: 32px;
@@ -471,26 +381,7 @@ ul {
 #skills {
   padding: 12px 0;
   margin-bottom: 80px;
-  /* background-color: rgb(92, 131, 131); */
 }
-
-/* #skills .skills-border {
-  background: linear-gradient(to right, #5f1d05, #764ba2);
-  border: none;
-  border-radius: 10px;
-  height: 6px;
-  width: 75px;
-  margin-bottom: 30px;
-} */
-
-/* --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7); */
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
 
 #skills .skil-titles {
   display: flex;
@@ -503,16 +394,9 @@ ul {
   align-items: center;
   justify-content: center;
   padding: 12px 28px;
-  /* color: hsl(0, 0%, 100%); */
   color: hsl(0, 0%, 82%);
-  /* border: 1px solid hsla(0, 0%, 84%, 0.7); */
   border: 1px solid hsla(45, 100%, 72%, 0.4);
   border-radius: 999px;
-  /* background: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  ); */
   background:
     linear-gradient(
       to bottom right,
@@ -528,14 +412,8 @@ ul {
 }
 
 .skill-name:hover {
-  /* background: hsl(45, 100%, 72%); */
   color: hsl(0, 0%, 100%);
   transform: translateY(-4px);
-
-  /* box-shadow:
-    0 0 10px rgba(59, 130, 246, 0.4),
-    0 0 20px rgba(59, 130, 246, 0.3),
-    0 10px 25px rgba(0, 0, 0, 0.3); */
   box-shadow:
     0 0 10px hsl(45, 100%, 72%),
     0 0 20px hsl(45, 54%, 58%),
@@ -563,7 +441,6 @@ ul {
 
 .card-wrapper {
   overflow: hidden;
-  /* min-height: fit-content; */
   border-radius: 15px;
   display: block;
   box-shadow: 0 8px 32px rgb(11, 12, 2);
@@ -576,7 +453,6 @@ ul {
 }
 
 .card-wrapper:hover {
-  /* transform: translateY(-8px); */
   border-color: hsla(45, 100%, 72%, 0.4);
   box-shadow:
     0 20px 40px hsla(0, 0%, 0%, 0.4),
@@ -584,7 +460,7 @@ ul {
 }
 
 .card-list.swiper-wrapper {
-  align-items: stretch; /* usually default, but let's be explicit */
+  align-items: stretch;
 }
 
 .card-item {
@@ -602,12 +478,6 @@ ul {
   height: 100%;
   display: flex;
   flex-direction: column;
-
-  /* border: 1px solid transparent;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease; */
 }
 
 .card-item:active {
@@ -648,7 +518,6 @@ ul {
 
 .project-features {
   flex: 1 0 auto;
-  /* flex: 0 0 auto; stop growing to fill space — we want a FIXED size now */
   min-height: 190px;
 }
 
@@ -687,7 +556,7 @@ ul {
   border: 1px solid hsl(0, 0%, 22%);
   background: hsl(240, 1%, 17%);
   box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  margin-top: auto; /* pushes tech tags + buttons to the bottom */
+  margin-top: auto;
 }
 
 .project-technologies span {
@@ -701,18 +570,8 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  /* margin-bottom: 15px; */
   margin-bottom: 0;
 }
-
-/* --light-gray: hsl(0, 0%, 84%);
---light-gray-70: hsla(0, 0%, 84%, 0.7); */
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
 
 .project-links .project-btn {
   font-size: 14px;
@@ -827,20 +686,10 @@ ul {
   color: hsl(45, 100%, 72%);
 }
 
-/* --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7); */
-
-/* --orange-yellow-crayola: hsl(45, 100%, 72%);  . -----> Primary headings.  
-  --vegas-gold: hsl(45, 54%, 58%);   . -----> secondary headings.   */
-
-/* --white-1: hsl(0, 0%, 100%); -------> secondary heanding
-  --white-2: hsl(0, 0%, 98%); --------> Main heading  */
-
 /* ---------- Experience section --------- */
 #experince {
   margin-bottom: 80px;
   padding: 12px 0;
-  /* background-color: rgb(82, 71, 57); */
 }
 
 .experince-card {
@@ -854,7 +703,6 @@ ul {
       hsla(240, 2%, 11%, 0) 100%
     ),
     hsl(240, 2%, 13%);
-
   box-shadow: 4px 8px 24px hsla(0, 0%, 0%, 0.25);
   transition: 0.35s all ease;
 }
@@ -914,13 +762,11 @@ ul {
 /* -----------leadership experince ------------ */
 
 #leadership-experince {
-  /* background-color: rgb(95, 81, 63); */
   margin-bottom: 80px;
   padding: 12px 0;
 }
 
 .leadership-experince-card {
-  /* background-color: #935742; */
   padding: 12px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -959,7 +805,6 @@ ul {
 .leadership-experince-box ul {
   list-style: none;
   padding-left: 18px;
-  /* font-size: 17px; */
   line-height: 1.9;
 }
 
@@ -974,7 +819,6 @@ ul {
 }
 
 .leadership-experince-box ul li::before {
-  /* margin-bottom: 10px; */
   content: "↪";
   position: absolute;
   left: 0;
@@ -987,17 +831,10 @@ ul {
 
 /* ----------Certifications ------------ */
 #certifications {
-  /* background-color: #2563eb; */
-  /* padding: 12px 0; */
   margin-bottom: 80px;
 }
 
-/* #certifications h2 {
-  margin-bottom: 15px;
-} */
-
 .certification-container {
-  /* background-color: #5f1d05; */
   padding: 12px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1026,10 +863,6 @@ ul {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
-/* .certification-card a {
-  color: white;
-} */
-
 .certification-card h3 {
   font-size: 16px;
   font-weight: 400;
@@ -1041,7 +874,6 @@ ul {
   font-size: 14px;
   font-weight: 400;
   color: hsl(0, 0%, 82%);
-  /* font-size: 13px; */
   margin-bottom: 8px;
 }
 
@@ -1065,7 +897,6 @@ ul {
       hsla(240, 2%, 11%, 0) 100%
     ),
     hsl(240, 2%, 13%);
-  /* color: #fff; */
   padding: 25px;
   border-radius: 15px;
   text-align: center;
@@ -1076,8 +907,6 @@ ul {
 }
 
 .achievement-card:hover {
-  /* transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(255, 152, 0, 0.25); */
   cursor: pointer;
   transform: translateY(-8px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
@@ -1108,18 +937,14 @@ ul {
 
 #contact {
   margin-bottom: 200px;
-  /* background-color: #b59d94; */
 }
 
 .map-container {
-  /* background-color: #5f1d05; */
   padding: 12px;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  /* gap: 35px; */
 }
 
 .map-container iframe {
@@ -1131,12 +956,10 @@ ul {
 }
 
 .form-container {
-  /* background-color: beige; */
   padding: 28px;
 }
 
 .form-container h3 {
-  /* color: hsl(0, 0%, 98%); */
   color: hsla(0, 0%, 84%, 0.7);
   font-size: 24px;
   font-weight: 600;
@@ -1215,7 +1038,6 @@ textarea {
 .btn-field {
   display: flex;
   justify-content: flex-end;
-  /* background-color: #3b82f6; */
 }
 
 .btn {
@@ -1244,7 +1066,6 @@ textarea {
   box-shadow: 4px 6px 10px 10px hsl(0, 0%, 19%) 97%;
 }
 
-/* .input-group textarea  */
 /* ------------- footer ------------ */
 
 #copy-rights {

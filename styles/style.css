@@ -224,7 +224,7 @@ ul {
   z-index: 5;
 }
 
-.navbar small {
+.navbar .navbar-highlight {
   font-size: 32px;
   font-weight: 900;
   color: hsl(45, 100%, 72%);

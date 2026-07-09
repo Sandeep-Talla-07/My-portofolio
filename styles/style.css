@@ -552,14 +552,14 @@ ul {
 }
 
 .card-wrapper {
-  max-width: 600px;
-  width: 100%;
-  margin: 80px 120px;
   overflow: hidden;
   min-height: max-content;
   border-radius: 15px;
   display: block;
   box-shadow: 0 8px 32px rgb(11, 12, 2);
+  max-width: 600px;
+  width: 100%;
+  margin: 80px auto;
 }
 
 .card-item {

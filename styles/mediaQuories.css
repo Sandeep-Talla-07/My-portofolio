@@ -1,10 +1,10 @@
 /* ================= Large Desktop ================= */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .skills-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
   }
-}
+} */
 /* ================= Desktop ================= */
 @media (max-width: 1200px) {
   .skills-container {

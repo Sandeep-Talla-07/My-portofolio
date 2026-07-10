@@ -350,7 +350,7 @@ ul {
 
 /* ----------- about section ------------ */
 #about {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   padding: 12px 0;
 }
 
@@ -380,25 +380,21 @@ ul {
 }
 
 /* ----------- Skills Section ----------- */
+
 #skills {
   padding: 12px 0;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
-#skills .skil-titles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-#skills .skil-titles .skill-name {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 28px;
-  color: hsl(0, 0%, 82%);
-  border: 1px solid hsla(45, 100%, 72%, 0.4);
-  border-radius: 999px;
+.skills-container .card {
+  padding: 18px 18px;
+  border-radius: 12px;
   background:
     linear-gradient(
       to bottom right,
@@ -406,28 +402,111 @@ ul {
       hsla(240, 2%, 11%, 0) 100%
     ),
     hsl(240, 2%, 13%);
-
+  border: 1px solid hsla(45, 100%, 72%, 0.4);
   box-shadow: 4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  font-size: 14px;
-  font-weight: 400;
   transition: 0.35s all ease;
 }
 
-.skill-name:hover {
-  color: hsl(0, 0%, 100%);
-  transform: translateY(-4px);
-  box-shadow:
-    0 0 10px hsl(45, 100%, 72%),
-    0 0 20px hsl(45, 54%, 58%),
-    0 10px 25px rgba(0, 0, 0, 0.3);
-
+.card:hover {
   cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.skill-header i {
+  color: hsl(45, 100%, 72%);
+  font-size: 18px;
+}
+
+.skill-header h3 {
+  font-size: 16px;
+  color: hsl(45, 100%, 72%);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.skill-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  color: hsl(0, 0%, 82%);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 12px;
+  line-height: 1.7;
+}
+
+.skill-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  line-height: 1.7;
+  color: hsl(45, 100%, 72%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skill-defination {
+  margin-top: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  border-radius: 8px;
+  background:
+    linear-gradient(
+      to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  border: 1px solid hsla(45, 100%, 72%, 0.4);
+  box-shadow: 4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  transition: 0.35s all ease;
+}
+
+.skill-defination:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.defination-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  line-height: 1.6;
+}
+
+.defination-details li {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 0%, 82%);
+  letter-spacing: 0.6px;
+}
+
+.defination-details-highlight {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(45, 100%, 72%);
 }
 
 /* ------------ Projects Section------------- */
-
 #projects {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .project-container {
@@ -450,7 +529,6 @@ ul {
   width: 100%;
   margin: 80px auto;
   border: 1px solid transparent;
-
   transition: 0.35s all ease;
 }
 
@@ -624,7 +702,7 @@ ul {
 /* ------------education --------- */
 
 #education {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .education-container {
@@ -690,7 +768,7 @@ ul {
 
 /* ---------- Experience section --------- */
 #experince {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   padding: 12px 0;
 }
 
@@ -764,7 +842,7 @@ ul {
 /* -----------leadership experince ------------ */
 
 #leadership-experince {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   padding: 12px 0;
 }
 
@@ -833,7 +911,7 @@ ul {
 
 /* ----------Certifications ------------ */
 #certifications {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .certification-container {
@@ -882,7 +960,7 @@ ul {
 /* -------------- achievements ------------- */
 #achievements {
   padding: 50px 0;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .achievement-container {
